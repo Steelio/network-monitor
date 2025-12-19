@@ -32,5 +32,5 @@ Creates a `network_logs/` directory with:
 
 Edit these variables at the top of the script:
 - `CHECK_INTERVAL` - seconds between checks (default: 2)
-- `PING_TIMEOUT` - timeout for ping responses (default: 2)
-- `FAILURE_THRESHOLD` - consecutive failures before declaring outage (default: 2)
+- `PING_TIMEOUT` - timeout for ping responses (default: 3)
+- `FAILURE_THRESHOLD` - consecutive failures before declaring outage (default: 3)
