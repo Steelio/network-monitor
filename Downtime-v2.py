@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Network Uptime Monitor
-Monitors network connectivity with professional logging for ISP reporting.
-"""
 
 import subprocess
 import platform
@@ -28,8 +24,8 @@ DNS_TEST_DOMAINS = [
 ]
 
 CHECK_INTERVAL = 2
-PING_TIMEOUT = 2
-FAILURE_THRESHOLD = 2
+PING_TIMEOUT = 3
+FAILURE_THRESHOLD = 3
 
 LOG_DIR = Path("network_logs")
 TIMESTAMP_FORMAT = "%Y-%m-%d %H:%M:%S %Z"
@@ -324,4 +320,5 @@ if __name__ == "__main__":
             time.sleep(CHECK_INTERVAL)
     
     except KeyboardInterrupt:
+
         end_signal(None, None)
